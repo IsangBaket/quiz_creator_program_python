@@ -2,10 +2,23 @@
 # Create a program that ask user for a question, it will also ask for 4 possible answer (a,b,c,d) and the correct answer. 
 # Write the collected data to a text file. Ask another question until the user chose to exit.
 
-print("This simple quiz tests how much you know Max Austine!")
+# loop that asks users for input for answers and questions until stop
+# save those inputs to another text file
 
-ques1 = input("What is Max's fav food?: ")
-print("A. Adobo " \
-    "B. Nilagang Baka" \
-    "C. Fried Sunny Side Egg" \
-    "D. McDonald's Chicken Fillet")
+# while True
+# ask user for question
+# ask user for answers a to d
+# ask user for correct answer
+# ask user if he likes to continue
+#   if user does not like to continue
+#       break
+# 
+# save questions and answers
+# figure out how to save them to a text file (probably gonna import some modules arono)
+# 
+# run quiz
+# program an answer checker
+# 
+# ask user if he wants to make another quiz
+# 
+# end
