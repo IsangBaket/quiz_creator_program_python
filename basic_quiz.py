@@ -24,27 +24,34 @@
 # end
 
 # asks user for inputs
+
+print("-----WELCOME TO MY QUIZ CREATOR-----")
+
 while True:
-    question = input("Enter Question: ")
-    print("Choices A to D")
-    A = input("A. ")
-    B= input("B. ")
-    C = input("C. ")
-    D = input("D. ")
-    correct_answer = input("letter of correct answer: ").upper()
-    cont = input("Do you wish to continue? y or n: ")
-
-    quiz_data = {
-        question,
-        A,
-        B,
-        C,
-        D,
-    }
-
-
-    if cont == "n":
-        print(quiz_data)
+    question = input("Enter Question(enter e to exit): ") # asks user for question
+    
+    if question == 'e': # ends program 
         break
+
+    print("Input answers for A to D") 
+    choices = []
+    for items in ['A', 'B', 'C', 'D']: # asks user for input for choices A to D
+        answers = input(f"Choices {items}: ")
+        choices.append(answers)
+
+    correct_answer = input("letter of correct answer: ").upper() # asks user for the correct answer
+
+
+    with open("max.txt", "a") as file: # saves input to external text file
+        file.write(f"Question: {question}")
+        file.write(f"A: {choices[0]}")
+        file.write(f"B: {choices[1]}")
+        file.write(f"C: {choices[2]}")
+        file.write(f"D: {choices[3]}")
+        file.write(f"Correct Answer: {correct_answer}")
+
+
+
+
     
 
