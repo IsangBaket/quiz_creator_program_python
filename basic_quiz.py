@@ -43,12 +43,13 @@ while True:
 
 
     with open("max.txt", "a") as file: # saves input to external text file
-        file.write(f"Question: {question}")
-        file.write(f"A: {choices[0]}")
-        file.write(f"B: {choices[1]}")
-        file.write(f"C: {choices[2]}")
-        file.write(f"D: {choices[3]}")
-        file.write(f"Correct Answer: {correct_answer}")
+        file.write(f"Question: {question}\n")
+        file.write(f"A: {choices[0]}\n")
+        file.write(f"B: {choices[1]}\n")
+        file.write(f"C: {choices[2]}\n")
+        file.write(f"D: {choices[3]}\n")
+        file.write(f"Correct Answer: {correct_answer}\n")
+        file.write('')
 
 
 

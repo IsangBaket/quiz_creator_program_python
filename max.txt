@@ -1,8 +1,5 @@
-QUESTION:ma
-A:ma
-B:ma
-C:ma
-D:ma
-CORRECT:A
----
-Question: mA: aB: xC: aD: uCorrect Answer: DQuestion: nA: aB: dC: sD: aCorrect Answer: AQuestion: maA: aB: dC: sD: dCorrect Answer: D
+Question: max/nA: austine
+B: bias
+C: baligasa
+D: bias
+Correct Answer: D
