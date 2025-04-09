@@ -22,3 +22,29 @@
 # ask user if he wants to make another quiz
 # 
 # end
+
+# asks user for inputs
+while True:
+    question = input("Enter Question: ")
+    print("Choices A to D")
+    A = input("A. ")
+    B= input("B. ")
+    C = input("C. ")
+    D = input("D. ")
+    correct_answer = input("letter of correct answer: ").upper()
+    cont = input("Do you wish to continue? y or n: ")
+
+    quiz_data = {
+        question,
+        A,
+        B,
+        C,
+        D,
+    }
+
+
+    if cont == "n":
+        print(quiz_data)
+        break
+    
+
