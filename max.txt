@@ -1,5 +1,24 @@
-Question: max/nA: austine
-B: bias
-C: baligasa
-D: bias
+Question: What is the title of my favorite song at the moment?
+A: Misteryoso by Cup of Joe
+B: Promise by Laufey
+C: Last Night on Earth by Green Day
+D: Almond Chocolate by Illit
+Correct Answer: C
+------
+
+Question: Where is my favorite place to cool off from stress?
+A: Roxas Boulevard
+B: Luneta Park
+C: Ayala Malls Circuit Makati
+D: PUP Main Lagoon
+Correct Answer: C
+------
+
+Question: Question: What is the title of my favorite song at the moment?
+A: Misteryoso by Cup of Joe
+B: Promise by Laufey
+C: a
+D: null
 Correct Answer: D
+------
+

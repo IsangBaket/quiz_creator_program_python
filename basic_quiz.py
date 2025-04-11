@@ -4,6 +4,13 @@
 
 print("-----WELCOME TO MY QUIZ CREATOR-----")
 
+while True:     # asks for user file name
+    txt_file = input("file name with '.txt': ")
+    if txt_file.endswith('.txt'):   # ensures that user puts file extension
+        break
+    print("please add a '.txt' extension!")
+
+
 while True:
     question = input("Enter Question(enter e to exit): ")   # asks user for question
     
@@ -19,7 +26,7 @@ while True:
 
     correct_answer = input("letter of correct answer: ").upper()    # asks user for the correct answer
 
-    with open("max.txt", "a") as file:   # saves input to external text file
+    with open(txt_file, "a") as file:   # saves input to external text file
         file.write(f"Question: {question}\n")
         file.write(f"A: {choices[0]}\n")
         file.write(f"B: {choices[1]}\n")
@@ -27,10 +34,4 @@ while True:
         file.write(f"D: {choices[3]}\n")
         file.write(f"Correct Answer: {correct_answer}\n")
         file.write('------\n\n')
-
-    
-
-
-
-    
-
+ 
