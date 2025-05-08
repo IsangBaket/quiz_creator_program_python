@@ -4,6 +4,9 @@
 def file_name():    # added needed functions first
     pass
 
+def convert_quiz():
+    pass
+
 def quiz():
     pass
 
