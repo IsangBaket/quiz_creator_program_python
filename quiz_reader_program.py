@@ -37,12 +37,32 @@ def convert_quiz(txt_file):
     return quiz_data
 
 def quiz(quiz_data):
-    for contents in quiz_data:
-        print("\n" + contents['question'])
-        print("A.", contents['A'])
-        print("B.", contents['B'])
-        print("C.", contents['C'])
-        print("D.", contents['D'])
+    score_tracker = 0
+    total_questions = len(quiz_data)
+    while True:
+        current_question = random.choice(quiz_data)     # randomly chooses question until user exits program
+        # score tracker
+        print(" ")
+        print("SCORE:")
+        print(score_tracker)
+
+        print("\n" + current_question['question'])
+        print("A.", current_question['A'])
+        print("B.", current_question['B'])
+        print("C.", current_question['C'])
+        print("D.", current_question['D'])
+
+        user_answer = input("Your answer (A/B/C/D or E to exit): ").upper()
+
+        if user_answer == 'E':      # breaks program when user wants to quit
+            print("Thank you for playing!")
+            break
+        elif user_answer == current_question['answer']:
+            score_tracker += 1      # adds score
+            total_questions += 1
+        else:
+            print(f"Wrong! The correct answer is {current_question['answer']}.")
+            total_questions += 1
 
 def main():
     txt_file = file_name()
