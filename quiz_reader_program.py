@@ -41,7 +41,7 @@ def convert_quiz(txt_file):
 
 def quiz(quiz_data):
     score_tracker = 0
-    total_questions = len(quiz_data)
+    total_questions = 0
     while True:
         current_question = random.choice(quiz_data)     # randomly chooses question until user exits program
         # score tracker
