@@ -34,10 +34,20 @@ def convert_quiz(txt_file):
             quiz_data.append(question_data)
     return quiz_data
 
-def quiz():
-    pass
+def quiz(quiz_data):
+    for contents in quiz_data:
+        print("\n" + contents['question'])
+        print("A.", contents['A'])
+        print("B.", contents['B'])
+        print("C.", contents['C'])
+        print("D.", contents['D'])
 
 def main():
-    pass
+    txt_file = file_name()
+    quiz_data = convert_quiz(txt_file)
+    quiz(quiz_data)
+
+if __name__ == "__main__":
+    main()
 
 
