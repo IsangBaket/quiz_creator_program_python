@@ -2,6 +2,7 @@
 # The user will answer the randomly selected question and check if the answer is correct.
 
 import random
+import colorama
 
 def file_name():    # added needed functions first
     while True:
