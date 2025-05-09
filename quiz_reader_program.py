@@ -3,6 +3,8 @@
 
 import random
 import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
 
 def file_name():    # added needed functions first
     while True:
@@ -58,15 +60,18 @@ def quiz(quiz_data):
             print("Thank you for playing!")
             break
         elif user_answer == current_question['answer']:
+            print(Fore.GREEN + "Correct!")
             score_tracker += 1      # adds score
             total_questions += 1
         else:
-            print(f"Wrong! The correct answer is {current_question['answer']}.")
+            print(Fore.RED + "Wrong!")
+            print(f"The correct answer is {current_question['answer']}.")
             total_questions += 1
     
-    print(f"\nCongratulations! You got a score of {score_tracker} out of {total_questions}")
+    print(Back.LIGHTCYAN_EX +  Style.BRIGHT + f"\n🥳🥳🥳Congratulations! You got a score of {score_tracker} out of {total_questions}")
 
 def main():
+    print(Style.BRIGHT + "----------START QUIZ----------")
     txt_file = file_name()
     quiz_data = convert_quiz(txt_file)
     quiz(quiz_data)
