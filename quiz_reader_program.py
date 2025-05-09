@@ -42,8 +42,7 @@ def quiz(quiz_data):
     while True:
         current_question = random.choice(quiz_data)     # randomly chooses question until user exits program
         # score tracker
-        print(" ")
-        print("SCORE:")
+        print("\nSCORE:")
         print(score_tracker)
 
         print("\n" + current_question['question'])
@@ -63,6 +62,8 @@ def quiz(quiz_data):
         else:
             print(f"Wrong! The correct answer is {current_question['answer']}.")
             total_questions += 1
+    
+    print(f"\nCongratulations! You got a score of {score_tracker} out of {total_questions}")
 
 def main():
     txt_file = file_name()
